@@ -4,32 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Map</title>
+    <title>Practical-5</title>
+    <style>
+        .click {
+            color: red;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .mb {
+            margin-bottom: 3rem;
+        }
+    </style>
 </head>
 <body>
+    <img 
+    style="width: 1300px; height: 91px; display: block; margin-left: auto; margin-right: auto;"
+    src="../assets/Practical-5-1.JPG" alt="" usemap="#nav_bar" class="mb">
+    <map name="#nav_bar">
+        <area shape="rect" coords="11,15 138,81" href="../index.html" target="_blank" alt="Home" title="HOME">
+        <area shape="rect" coords="139,12, 355,78" href="./Practical-1.html" target="_blank" alt="Practical-1" title="PRACTICAL-1">
+        <area shape="rect" coords="355,10, 592,81" href="./Practical-2.htm" target="_blank" alt="Practical-2" title="PRACTICAL-2">
+        <area shape="rect" coords="592,12, 820,79" href="./Practical-3.html" target="_blank" alt="Practical-3" title="PRACTICAL-3">
+        <area shape="rect" coords="820,15, 1054,81" href="./Practical-4.htm" target="_blank" alt="Practical-3" title="PRACTICAL-4">
+        <area shape="rect" coords="1054,13, 1286,79" href="#Prac-5" alt="Practical-5" title="PRACTICAL-5">
+    </map>
     
-    <figcaption style="color: whitesmoke; text-align: center;">Introduction to Front-End Technologies</figcaption>
-        <figure style="border: 2px gray; display:inline-block; text-align: center;">
-            <img src="./Practical-5_A-Img.png" alt="" usemap="#myMap">
-            <map name = "myMap">
+    <h2 style="text-align: center; color: white; font-size: 200%;">Introduction to Front-End Technologies</h2>
 
-                <area shape = "rect" coords="17,9,  20,211"
-                href="./HTML_web_pg.html" alt="" >
+    <img 
+        style="width: 500px; height: 442px; display: block; margin-left: auto; margin-right: auto;" 
+        src="../assets/Practical-5-2.JPG" alt="Front-End Technologies" usemap="#myMap">
 
-                <area shape = "circle" coords="360,127, 246,128, 485,128"
-                href="./CSS_web_pg.html" alt="" >
-                
-                <area shape = "rect" coords="25,249, 211,250, 27,430, 212,429"
-                href="./JS_web_pg.html" alt="" >
-                
-                <area shape = "poly" coords="363,257, 290,294, 301,381, 364,419, 424,382, 438,285"
-                href="./Bootstrap_web_pg.html" alt="" >
-                
-            </map>
-        </figure>
+    <map name = "myMap">
+        <area shape = "rect" coords="25,11,  217,210"
+        href="./HTML_web_pg.html" alt="About HTML" target="_blank" >
+
+        <area shape = "circle" coords="361,127, 127"
+        href="./CSS_web_pg.html" alt="About CSS" target="_blank" >
         
-        <figcaption style="color: red; text-align: center;">Click on any part of the logo to know more about these technologies</figcaption>
-
+        <area shape = "rect" coords="30,246, 213,418"
+        href="./JS_web_pg.html" alt="About JavaScript" target="_blank">
+        
+        <area shape = "poly" coords="362,254, 288,280, 300,373, 362,409, 421,376, 433,280"
+        href="./Bootstrap_web_pg.html" alt="About Bootstrap" target="_blank">
+        
+    </map>
+    <p class="click" style="color: red; font-size: 120%;">Click on any logo to know more about the technologies.</p>
 
 </body>
 </html>
