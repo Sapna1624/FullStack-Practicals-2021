@@ -4,9 +4,246 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="theCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        *
+        {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box; 
+        }
+        .container
+        {
+            /* width: 95%; */
+            margin-left: 20px;
+            margin-right: 20px;
+            /* border: 5px solid black; */
+            /* margin: auto;  */
+        }
+        body
+        {
+            border: 10px solid rgb(231, 228, 228); 
+        }
+
+        h1
+        {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            line-height: 10px;
+            color: black;
+        }
+        h2
+        {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            line-height: 10px;
+            color: white;
+            line-height: 30px;
+        }
+        
+
+        .header
+        {
+            background-color: rgb(148, 144, 144);
+            height: 100px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+
+
+        .banner
+        {
+            background-color: skyblue;
+            height: 400px;
+            margin-bottom: 10px;
+        }
+
+
+
+        .sec1
+        {
+            height: 300px;
+            width: 100%;
+            /* border: 2px solid pink; */
+            margin-bottom: 10px;
+        }
+        .sub-sec1
+        {
+            display: inline-flex;
+            width: 100%;
+        }
+        .mem1, .mem2, .mem3, .mem4
+        {
+            color: white;
+            text-align: center;
+            width: 100%;
+            line-height: 230px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 100%;
+            background-color: rgb(216, 180, 20);
+        }
+        /* .sub-sec1::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        } */
+
+
+
+        .sec2
+        {
+            height: 300px;
+            width: 100%;
+            /* border: 2px solid red; */
+            margin-bottom: 10px;
+        }
+        
+        .left
+        {
+            background-color: rgb(182, 177, 177);
+            float: left;
+            width: 50%;
+            height: 80%;
+            /* border: 2px solid chocolate; */
+            margin-right: 10px;
+        }
+        .right
+        {
+            float: right;
+            width: 48%;
+            height: 80%;
+            /* border: 2px solid cornflowerblue; */
+        }
+        .A1, .A2, .A3
+        {
+            height: 30%;
+            background-color: rgb(221, 79, 28);
+            margin-bottom: 10px;
+            color: white;
+        }
+
+
+
+        .sec3
+        {
+            height: 300px;
+            width: 100%;
+            /* border: 2px solid green; */
+            margin-bottom: 10px;
+        }
+        .sub-sec3
+        {
+            display: inline-flex;
+            width: 100%;
+        }
+        .box1, .box2, .box3, .box4
+        {
+            text-align: center;
+            width: 100%;
+            line-height: 230px;
+            background-color: red;
+            color: white;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+
+        .sec4
+        {
+            height: 100px;
+            width: 100%;
+            /* border: 2px solid purple; */
+        }
+        .footer
+        {
+            background-color: plum;
+            height: 50%;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
+    <h1 id="Home"></h1>
+    <div class="menu">
+        <ul>
+            <li><a href="#Home"><i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="#About Us"><i class="fa fa-user"></i>ABOUT US</a></li>
+            <li><a href="#Team"><i class="fa fa-users"></i>TEAM</a></li>
+            <li><a href="#Tech"><i class="fa fa-computer"></i>TECHNOLOGIES</a></li>
+            <li><a href="#Contact"><i class="fa fa-phone"></i>CONTACT</a></li>
+            
+        </ul>
+    </div>
+    
+    <h1 id="About Us"></h1>
+    <div class="container">
+        <div class="header">
+            <h2>Header</h2>
+        </div>
+
+        <div class="banner">
+            <h2 style="padding: 170px;">Banner</h2>
+        </div>
+
+
+        <h1 id="Team"></h1>
+        <div class="sec1" >
+            <h1 style="text-align: center;">Section-1</h1>
+            <div class="sub-sec1" >
+                <div class="mem1">Member1</div>
+                <div class="mem2">Member2</div>
+                <div class="mem3">Member3</div>
+                <div class="mem4">Member4</div>
+            </div>
+        </div>
+        
+
+
+            
+        <div class="sec2">
+            <h1 style="text-align: center;">Section-2</h1>
+            <div class="left">
+                <h2 style="text-align: center; line-height: 170px;">Main Content</h2>
+            </div>
+            <div class="right">
+                <div class="A1" >
+                    <h2>Article-1</h2>
+                </div>
+                <div class="A2">
+                    <h2>Article-2</h2>
+                </div>
+                <div class="A3">
+                    <h2>Article-3</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sec3" >
+            <h1 style="text-align: center;">Section-3</h1>
+            <div class="sub-sec3" >
+                <div class="box1">Box1</div>
+                <div class="box2">Box2</div>
+                <div class="box3">Box3</div>
+                <div class="box4">Box4</div>
+            </div>
+        </div>
+
+
+        <div class="sec4">
+            <h1 style="text-align: center;">Section-4</h1>
+            <div class="footer">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </div>  
     
 </body>
 </html>
