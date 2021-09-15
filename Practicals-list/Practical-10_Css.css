@@ -1,127 +1,189 @@
-*{
-    padding: 0;margin: 0;box-sizing: border-box;font-family:Georgia, 'Times New Roman', Times, serif;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.header
-{
+
+.header {
     width: 100%;
     height: 70px;
-    background-color: #2f3640;
+    background-color: plum;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 0px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.header img{
+
+.header img {
     width: 70px;
-    height: 50px;
-    margin-right: 15px;
+    height: 70px;
+    margin-right: 20px;
 }
-.header h1
-{
-    line-height: 70px;
+
+#chk {
+    display: none;
+}
+
+#show-btn,
+#hide-btn {
+    position: fixed;
+    top: 20px;
+    left: 70px;
+    font-size: 30px;
     color: white;
 }
-.content
-{
-    width: 100%;
-    padding: 2opx;
-    transition: 0.8s;
+
+#hide-btn {
+    display: none;
 }
-.content img
-{
-    width: 100%;
-    max-width: 700px;
+
+#chk:checked~.sidebar {
+    left: 0%;
+}
+
+#chk:checked~#hide-btn {
     display: block;
-    margin: auto;
 }
-.content p{
-    text-align: justify;
+
+#chk:checked~#show-btn {
+    display: none;
 }
-.slidebar
-{
-    width: 20;
+
+#chk:checked~.content {
+    width: 80%;
+}
+
+.sidebar {
+    background-color: plum;
+    width: 20%;
     height: 100%;
     position: fixed;
     top: 70px;
-    background-color: black;
     left: -100%;
-    transition: 0.7s;
-
-
+    transition: .3s;
 }
-.slidebar ul{
+
+.menu {
     list-style: none;
-    
 }
-.slidebar ul li{
-    border-bottom: 2px solid rgb(255, 255, 255,0.1);
 
+.menu li {
+    border-bottom: solid 3px rgba(255, 255, 255, 0.1);
 }
-.slidebar ul li a{
+
+.menu li a {
     display: block;
-    text-decoration: none;
+    width: 100%;
+    height: 50px;
     color: white;
-    font-size: 25px;
-    padding: 15px 5px;
-    transition: 4s;
+    line-height: 50px;
+    text-decoration: none;
 }
-a i{
-    margin-right: 15px;
+
+.menu li a:hover {
+    border-left: solid white 8px;
+    transition: .5s;
 }
-.slidebar ul li a :hover{
-    border-left: 10px solid white;
+
+.menu li a i {
+    margin: 0px 20px;
 }
-.social
-{
-    margin-top:300px ;
+
+.logo {
+    width: 20%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    font-size: 30px;
-    border-top: rgb(255, 255, 255,0.1);
-    border-bottom: 2px solid rgb(255, 255, 255,0.1);
-    padding: 15px 25px;
-}
-i{
-    color: white;
-    font-size: 30px;
-}
-.show-btn,.hide-btn
-{
-    font-size: 35px;
-    color: white;
+    border-top: solid 3px rgba(255, 255, 255, 0.1);
+    border-bottom: solid 3px rgba(255, 255, 255, 0.1);
+    padding: 5px 0px;
     position: fixed;
-    top: 20px;
-    left: 50px;
+    bottom: 0px;
 }
-.hide-btn
-{
-    opacity: 0;
+
+.logo a {
+    color: white;
+    font-size: 30px;
 }
-#chk:checked ~.slidebar
-{
-    left: 0;
-}
-#chk:checked ~.show-btn
-{
-    opacity: 0;
-}
-#chk:checked ~.hide-btn
-{
-    opacity: 1;
-}
-#chk:checked ~.content
-{
-    width: 88.6%;
+
+.content {
+    width: 100%;
     float: right;
+    transition: .5s;
+    margin-top: 70px;
+    padding: 10px;
 }
-@media(max-width:768px)
-{
-    .slidebar{
+
+.content img {
+    display: block;
+    height: 400px;
+    width: 650px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+.content div {
+    width: 100%;
+    text-align: justify;
+}
+
+@media(max-width:864px) {
+    .sidebar {
         width: 100%;
+    }
+    #chk:checked~.content {
+        width: 100%;
+    }
+    .menu {
+        list-style: none;
         text-align: center;
     }
-
-.header h1{
-    display: none;
+    .menu:first-child {
+        border-top: solid 3px rgba(255, 255, 255, 0.1);
+    }
+    .menu li a {
+        height: 60px;
+        line-height: 60px;
+        font-size: 20px;
+    }
+    .menu li a:hover {
+        border-left: solid white 20px;
+        transition: .5s;
+    }
+    .logo {
+        width: 100%;
+    }
 }
+
+@media(max-width:690px) {
+    .content img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media(max-width:450px) {
+    .header h1 {
+        display: none;
+    }
+    .header {
+        display: block;
+    }
+    .header img {
+        float: right;
+    }
+    #show-btn,
+    #hide-btn {
+        top: 15px;
+        left: 40px;
+    }
+    .content img {
+        height: 300px;
+    }
+    .container {
+        min-width: 280px;
+    }
 }
