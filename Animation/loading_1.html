@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading-1</title>
+    <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: none;
+            font-size: 60px;
+        }
+        .animation
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .loading
+        {
+            color: rgb(20, 20, 241);
+        }
+        .bubbles
+        {
+            background-image : linear-gradient(skyblue, blue, purple);
+            /* transform: scale(1.7); */
+            animation-name: bubble;
+            animation-duration: 2ms;
+        }
+        @keyframes bubble 
+        {   
+            0% {transform: scale(1);}            
+            50% {transform: scale(1.7);}
+            100% {transform: scale(1);}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="animation">
+        <div class="loading">
+            <h1>Loading</h1>
+        </div>
+        <div class="bubbles">
+            <!-- <p>.....</p> -->
+        </div>
+    </div>
+</body>
+</html>
