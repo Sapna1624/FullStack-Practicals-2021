@@ -1,0 +1,72 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+table
+{
+    width: 70%;
+    height: 100vh;
+    padding: 4px;
+    text-align: center;
+    margin: auto;
+}
+caption
+{
+    font-weight: bold;
+    font-size: larger;
+}
+.col1
+{
+    background-color: rgb(208, 223, 157);
+}
+.col2
+{
+    background-color: rgb(168, 241, 154);
+}
+.col3
+{
+    background-color: rgb(139, 193, 214) ;
+}
+.col4
+{
+    background-color: rgb(165, 210, 228);
+}
+tbody tr:nth-child(even)
+{
+    background-color: #fff;
+}
+tbody
+{
+    line-height: 40px;
+}
+th
+{
+    color: rgb(96, 9, 158);
+    font-size: 30px;
+}
+#Price
+{
+    color: green;
+    font-size: large;    
+}
+tfoot
+{
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+a
+{
+    text-decoration: none;
+    background-color: rgb(96, 9, 158);
+    font-size: larger;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+}
+a:hover
+{
+    background-color: red;
+}
