@@ -14,11 +14,32 @@
             margin: 0;
             box-sizing: content-box;
         }
+        .c1 li
+        {display: block;}
+        .c2 li
+        {display: inline;}
+        .c1 li
+        {display: inline-block;}
+        .c1 li
+        {display: flex;}
+        .c1 li
+        {display: flexbox;}
+        .c1 li
+        {display: inline-flex;}
+        .imgss
+        {
+            display: inline;
+        }
+        .floatImgss
+        {
+            float: left;;
+        }
+        table,th,td, tr{border: 1px solid ;}
     </style>
 </head>
 <body>
     <h3>Heading</h3>
-    <table border="1">
+    <table border="5" align="center" style="border:2px solid brown;">
         <tr>
           <td colspan="2">This cell spans the two columns</td>
           <td rowspan="2">This cell spans two rows</td>
@@ -28,15 +49,117 @@
           <td>column 1</td>
           <td>column 1</td>
           <td>column 2</td>
+          <td rowspan="2">This cell spans two rows</td>
+          <td>column 2</td>
+          <td>column 2</td>
+          <td>column 2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">This cell spans two rows</td>
+        </tr>
+        <tr>
+            <td>column</td>
+            <td>column</td>
+            <td>column</td>
+            <td>column</td>
         </tr>
     </table>
     <p style="background-color: powderblue; color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni deserunt odio quam ipsa ratione nisi obcaecati ducimus vel quisquam dicta!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, <span style="background-color: red; color: blue; font-size: 10px; font-family:cursive; "> <strong>reprehenderit </strong> quibusdam. </span> Sint blanditiis beatae ipsa officiis labore quas ut aliquam non nesciunt est consequuntur et adipisci voluptatem fugiat similique reprehenderit assumenda perspiciatis doloribus explicabo, magnam vel quo placeat sunt excepturi.</p>
+    <p>Lorem ipsum dolor sit  amet <q style="text-decoration-line: underline;">consectetur adipisicing</q>elit. Maxime, <span style="background-color: red; color: blue; font-size: 10px; font-family:cursive; "> <strong>reprehenderit </strong> quibusdam. </span> Sint blanditiis beatae ipsa officiis labore quas ut aliquam non nesciunt est consequuntur et adipisci voluptatem fugiat similique reprehenderit assumenda perspiciatis doloribus explicabo, magnam vel quo placeat sunt excepturi.</p>
     <br>
     <p style="color: blue;">Lorem ipsum </p>
-    <img  src="./assets/Assignment-8-Team Members-2.JPG" alt=" alternate" title="team member" style="text-align: right; float: right; background-color: red; border: 5px solid saddlebrown;" >
+    <img  src="../assets/Assignment-8-Team Members-1.JPG" alt=" alternate" title="team member" style=" text-align: right; float: right; border: 5px double saddlebrown; background-color: yellow;" >
 
+    <table width="800px" align="right" style=" border: 5px dotted blue; ">
+        <thead>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td>d</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>footer1</td>
+                <td>footer2</td>
+            </tr>
+            <tr>new footer</tr>
+            <tr>
+                <td>footer</td>
+            </tr>
+        </tfoot>
+        <tr>yay</tr>
+        <caption style="text-align: start;" >Caption</caption>
+    </table>
+
+
+    <table>
+        <tr>
+            <th>head</th>
+            <th>fh</th>
+        </tr>
+        <tr>
+            <td>col</td>
+            <td>col</td>
+        </tr>
+        <tr>
+            <td>foot</td>
+        </tr>
+    </table>
     <p style="color: red; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officia quos iure quae aliquam tenetur accusamus eligendi nisi rem animi, ipsam, nostrum delectus facilis perferendis! Delectus saepe sint sunt enim!</p>
+    <p>dtrjucykyli<blockquote> ipsum dolor sit amet, consectetur adipisicing elit. Excepturi a, cupiditate recusandae sequi numquam placeat aliquam sunt itaque ex rem consequuntur, reiciendis perspiciatis esse consequatur reprehenderit non, libero optio molestiae illo exercitationem eum omnis sit? Dolore nulla neque aperiam alias, doloribus fugiat nesciunt tempore repellat quia eligendi exercitationem quasi iusto.</blockquote>kjhhnkj;lkp'</p>
+
+    <br>
+    <br>
+    <img src="../assets/Assignment-8-Team Members.JPG" alt="" usemap="#map">
+    <map id="map">
+        <area shape="" coords="" href="" alt="" title="" target="_blank">
+    </map>
+    <br>
+    <br>
+    <br>
+    <picture>
+        <source srcset="../assets/Assignment-8-Team Members-1.JPG 3x">
+        <source srcset="logo-480.png, logo-480-2x.png 2x">
+        <img src="logo-320.png" alt="logo">
+      </picture>
+    <br>
+    <br>
+    <br>
+
+
+    <img src="../assets/programming.gif" title="Programming img" alt="Computer Man" style="width:48px;height:48px;">
+    <br>
+    <img src="" title="Programming img tootltip" alt="Computer Man" style="width:48px;height:48px;">
+    <br>
+    <br>
+    <img src="https://via.placeholder.com/150x30.jpg/09/fff" alt="">
+    <img src="https://via.placeholder.com/150.jpg/FFFF00/000000" alt="">
+    <img src="https://via.placeholder.com/150.jpg/fff" alt="">
+    <img src="https://via.placeholder.com/150.jpeg/fff" alt="">
+    <img src="https://via.placeholder.com/150.png/fff" alt="">
+    <br>
+    <br>
+    <img src="https://picsum.photos/150/100" alt="">
+    <img src="https://picsum.photos/150/100" alt="">
+    <img src="https://picsum.photos/100/100" alt="">
+    <img src="https://picsum.photos/id/24/150/100" alt="">
+    <img src="https://picsum.photos/id/16/150/200" alt="">
+    <img src="https://picsum.photos/150/100" alt="">
+    <img src="https://picsum.photos/100/100" alt="">
+    <img src="https://picsum.photos/200/300?random=2">
+    <img src="https://picsum.photos/seed/any_no._or_string/200/100" alt="">
+    
+    <br>
 
     lofsdfjerferafdsjfkldsfk
     sfksdvndfjbv
@@ -46,14 +169,74 @@
     <pre>Lorem ipsum dolor                  sit amet consectetur adipisicing eli
         
         t. Eius eaque quos tempora enim cupiditate officiis in, commodi nobis dol
-        
-        
         or rerum molestias neque fuga
          repudiandae voluptas! Ut                   accusantium corrupti ipsa commodi?</pre>
 
-    <h6>head</h6>         
-    <p>head</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ab velit vitae inventore quam eius nostrum fuga aut ipsa, dolore incidunt blanditiis eveniet nesciunt necessitatibus obcaecati saepe explicabo maxime ducimus, non, doloremque magni. Doloremque ad ipsa est incidunt. Ad possimus voluptas, iusto reiciendis dolore nemo laboriosam, ab provident tenetur culpa est minus dolor quis unde totam ducimus expedita dicta nulla nisi cumque! Mollitia, perferendis quis a doloremque quae quasi aut minima rem consequatur fugit vitae? Non in hic, dolorum unde illo voluptatibus omnis temporibus itaque porro nulla, ab quo animi illum adipisci! Natus id maxime ex modi laborum, cupiditate fugiat repellat, magni hic, dicta dolores? Pariatur fuga earum obcaecati adipisci, vero aspernatur totam at tempora distinctio amet commodi dignissimos nemo modi quaerat neque velit excepturi laboriosam nisi ipsam ab cumque corporis facere possimus! Fugiat voluptatibus praesentium nostrum voluptatem recusandae nihil iure enim, repellat quibusdam veniam numquam, ipsum sed ipsa facere quae maiores fuga. Alias iure, eligendi nostrum cum distinctio mollitia atque ipsa delectus ab esse quia voluptas odio. Blanditiis nisi tenetur deserunt repudiandae nobis consequatur ducimus eius at beatae architecto necessitatibus atque qui in cumque cupiditate, ratione numquam minima voluptatibus laboriosam incidunt ut nulla a excepturi! Quibusdam nihil eos alias facere a ab iusto illo saepe dolor impedit molestias autem laudantium, quas vitae illum odio unde qui eveniet doloremque eaque, quis vero facilis ullam quae. Tenetur architecto cupiditate expedita, quia sunt consectetur qui aperiam animi veniam in excepturi laboriosam amet earum dolores minima asperiores porro distinctio, molestiae iusto! Accusamus dolore laudantium sed, doloribus placeat aspernatur et aperiam ut, ullam nisi quam voluptas, quo eligendi quos. Deleniti nemo placeat qui veniam ut! Eveniet, dolorum! Optio incidunt explicabo quae, alias non voluptatem repudiandae temporibus repellat sequi harum! Quo sed deserunt facilis sint, facere consequuntur laboriosam adipisci error quaerat illum odio aspernatur distinctio dignissimos rem maiores quisquam laborum? Fugit facilis fuga quasi aperiam accusamus itaque molestias repellat. Tenetur explicabo porro accusantium vel vero, eaque eum atque maxime error ipsum enim nobis quasi dolore facere minima aspernatur in quibusdam fugiat! Aperiam est distinctio incidunt repellat ducimus asperiores, sequi aspernatur dolor, fuga nostrum excepturi maxime ratione fugiat animi nihil modi, dolore porro necessitatibus eos magnam unde laudantium optio debitis sit. Voluptate iste non adipisci, quam, vitae sint soluta sequi atque porro aperiam sed omnis neque, voluptatibus architecto sit quidem optio deserunt ea ad. Minus dolores obcaecati neque dolorem officia consectetur commodi temporibus accusantium! Ea accusantium dignissimos odit rem labore hic dolor quaerat quia dolores, deleniti, numquam omnis enim provident voluptates ab doloribus voluptate. Esse debitis nihil hic neque nostrum nulla eveniet eos expedita illum commodi perspiciatis quisquam sunt deserunt id magni dolorem cupiditate vitae repellat ullam, et ex quasi sint, impedit accusamus. Provident dolores adipisci aspernatur. Nam, sapiente ullam? Totam eveniet, expedita a soluta est sequi non consectetur placeat. Sit quas esse rem magni impedit culpa. Dignissimos eaque vitae repellendus nulla quisquam necessitatibus sed eum nemo aut eos saepe aliquam, ducimus, adipisci sit enim nobis consequatur? Provident, officiis laboriosam? Cum veniam ab repellat ut culpa!</p>
+    <h6>h6</h6>         
+    <p>p</p>
+    <br>
+    <p style="overflow: scroll; height: 200px; width: 400px; background-color: #fff;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ab velit vitae inventore quam eius nostrum fuga aut ipsa, dolore incidunt blanditiis eveniet nesciunt necessitatibus obcaecati saepe explicabo maxime ducimus, non, doloremque magni. Doloremque ad ipsa est incidunt. Ad possimus voluptas, iusto reiciendis dolore nemo laboriosam, ab provident tenetur culpa est minus dolor quis unde totam ducimus expedita dicta nulla nisi cumque! Mollitia, perferendis quis a doloremque quae quasi aut minima rem consequatur fugit vitae? Non in hic, dolorum unde illo voluptatibus omnis temporibus itaque porro nulla, ab quo animi illum adipisci! Natus id maxime ex modi laborum, cupiditate fugiat repellat, magni hic, dicta dolores? Pariatur fuga earum obcaecati adipisci, vero aspernatur totam at tempora distinctio amet commodi dignissimos nemo modi quaerat neque velit excepturi laboriosam nisi ipsam ab cumque corporis facere possimus! Fugiat voluptatibus praesentium nostrum voluptatem recusandae nihil iure enim, repellat quibusdam veniam numquam, ipsum sed ipsa facere quae maiores fuga. Alias iure, eligendi nostrum cum distinctio mollitia atque ipsa delectus ab esse quia voluptas odio. Blanditiis nisi tenetur deserunt repudiandae nobis consequatur ducimus eius at beatae architecto necessitatibus atque qui in cumque cupiditate, ratione numquam minima voluptatibus laboriosam incidunt ut nulla a excepturi! Quibusdam nihil eos alias facere a ab iusto illo saepe dolor impedit molestias autem laudantium, quas vitae illum odio unde qui eveniet doloremque eaque, quis vero facilis ullam quae. Tenetur architecto cupiditate expedita, quia sunt consectetur qui aperiam animi veniam in excepturi laboriosam amet earum dolores minima asperiores porro distinctio, molestiae iusto! Accusamus dolore laudantium sed, doloribus placeat aspernatur et aperiam ut, ullam nisi quam voluptas, quo eligendi quos. Deleniti nemo placeat qui veniam ut! Eveniet, dolorum! Optio incidunt explicabo quae, alias non voluptatem repudiandae temporibus repellat sequi harum! Quo sed deserunt facilis sint, facere consequuntur laboriosam adipisci error quaerat illum odio aspernatur distinctio dignissimos rem maiores quisquam laborum? Fugit facilis fuga quasi aperiam accusamus itaque molestias repellat. Tenetur explicabo porro accusantium vel vero, eaque eum atque maxime error ipsum enim nobis quasi dolore facere minima aspernatur in quibusdam fugiat! Aperiam est distinctio incidunt repellat ducimus asperiores, sequi aspernatur dolor, fuga nostrum excepturi maxime ratione fugiat animi nihil modi, dolore porro necessitatibus eos magnam unde laudantium optio debitis sit. Voluptate iste non adipisci, quam, vitae sint soluta sequi atque porro aperiam sed omnis neque, voluptatibus architecto sit quidem optio deserunt ea ad. Minus dolores obcaecati neque dolorem officia consectetur commodi temporibus accusantium! Ea accusantium dignissimos odit rem labore hic dolor quaerat quia dolores, deleniti, numquam omnis enim provident voluptates ab doloribus voluptate. Esse debitis nihil hic neque nostrum nulla eveniet eos expedita illum commodi perspiciatis quisquam sunt deserunt id magni dolorem cupiditate vitae repellat ullam, et ex quasi sint, impedit accusamus. Provident dolores adipisci aspernatur. Nam, sapiente ullam? Totam eveniet, expedita a soluta est sequi non consectetur placeat. Sit quas esse rem magni impedit culpa. Dignissimos eaque vitae repellendus nulla quisquam necessitatibus sed eum nemo aut eos saepe aliquam, ducimus, adipisci sit enim nobis consequatur? Provident, officiis laboriosam? Cum veniam ab repellat ut culpa!</p>
+    <br>
+    <p style="font-variant: small-caps;">Lorem, ipsum dolor sit <span style="display: block; background-color: red; color: royalblue;">HELLO</span> amet consectetur adipisicing elit. Quibusdam delectus molestiae quas corporis sed quam inventore dignissimos soluta ut voluptate porro doloremque perferendis obcaecati animi autem, facere impedit temporibus praesentium eos commodi debitis! Officiis esse veniam, doloribus consequuntur ea nam suscipit vero similique ut amet doloremque sapiente qui. Magni, quas!</p>
+    <br>
+    <p style="font-variant: small-caps;">Lorem, ipsum dolor sit <span style="display: inline; background-color: red; color: royalblue;">HELLO</span> amet consectetur adipisicing elit. Quibusdam delectus molestiae quas corporis sed quam inventore dignissimos soluta ut voluptate porro doloremque perferendis obcaecati animi autem, facere impedit temporibus praesentium eos commodi debitis! Officiis esse veniam, doloribus consequuntur ea nam suscipit vero similique ut amet doloremque sapiente qui. Magni, quas!</p>
+    <br>
+    <p style="font-variant: small-caps;">Lorem, ipsum dolor sit <span style="display: inline-block; background-color: red; color: royalblue;">HELLO</span> amet consectetur adipisicing elit. Quibusdam delectus molestiae quas corporis sed quam inventore dignissimos soluta ut voluptate porro doloremque perferendis obcaecati animi autem, facere impedit temporibus praesentium eos commodi debitis! Officiis esse veniam, doloribus consequuntur ea nam suscipit vero similique ut amet doloremque sapiente qui. Magni, quas!</p>
+    <br>
+    <p style="font-variant: small-caps;">Lorem, ipsum dolor sit <span style="display: flex; background-color: red; color: royalblue;">HELLO</span> amet consectetur adipisicing elit. Quibusdam delectus molestiae quas corporis sed quam inventore dignissimos soluta ut voluptate porro doloremque perferendis obcaecati animi autem, facere impedit temporibus praesentium eos commodi debitis! Officiis esse veniam, doloribus consequuntur ea nam suscipit vero similique ut amet doloremque sapiente qui. Magni, quas!</p>
+    <br>
+    <p style="font-variant: small-caps;">Lorem, ipsum dolor sit <span style="display: flexbox; background-color: red; color: royalblue;">HELLO</span> amet consectetur adipisicing elit. Quibusdam delectus molestiae quas corporis sed quam inventore dignissimos soluta ut voluptate porro doloremque perferendis obcaecati animi autem, facere impedit temporibus praesentium eos commodi debitis! Officiis esse veniam, doloribus consequuntur ea nam suscipit vero similique ut amet doloremque sapiente qui. Magni, quas!</p>
+    
+    <ul class='c1'>
+        <li>HE</li>
+        <li>HELLOOOO</li>
+        <li>HELLOOOO</li>
+    </ul>
+    <ul class='c2'>
+        <li>H</li>
+        <li>HELLOOOO</li>
+        <li>HELLOOOO</li>
+    </ul>
+    <ul class='c3'>
+        <li>H</li>
+        <li>HELLOOOO</li>
+        <li>HELLOOOO</li>
+    </ul>
+    <ul class='c4'>
+        <li>H</li>
+        <li>HELLOOOO</li>
+        <li>HELLOOOO</li>
+    </ul>
+    <ul class='c5'>
+        <li>H</li>
+        <li>HELLOOOO</li>
+        <li>HELLOOOO</li>
+    </ul>
+    <ul class='c6'>
+        <li>H</li>
+        <li>HELLOOOO</li>
+        <li>HELLOOOO</li>
+    </ul>
+    <img class="imgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
+    <img class="imgss" src="../assets/Assignment-8-Team Members-2.JPG" alt="">
+    <img class="imgss" src="../assets/Assignment-8-Team Members-3.JPG" alt="">
+    <img class="imgss" src="../assets/Assignment-8-Team Members-4.JPG" alt="">
+    <img class="imgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
+    <br>
+    <hr>
+    <br>
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-2.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-3.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-4.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
+    <img class="floatImgss" src="../assets/Assignment-8-Team Members-1.JPG" alt="">
     
 </body>
 </html>
