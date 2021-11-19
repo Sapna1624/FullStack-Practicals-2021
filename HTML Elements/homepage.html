@@ -2,6 +2,30 @@
 <html lang="en">
     <head>
         <title> HTML Elements</title>
+        <style>
+        ol
+        {
+            list-style-type: lower-latin;
+            /* counter-reset: li; */
+        }
+        .c1 li
+        {display: block;
+        font-weight: lighter;}
+        .c2 li
+        {display: inline;
+        }
+        ol {
+            /* counter-reset: i; */
+            /* list-style: none; } */
+        ol li { display:inline-block; }
+        ol li:before {
+            /* content: counter(li) ; */
+            /* counter-increment: li;  */
+            color: red;
+            text-align:left;
+            direction: rtl;
+        }
+        </style>
     </head>
 
     <body>
@@ -26,5 +50,20 @@
         <p style = "text-align : inherit;"> 
             This is my paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eaque vel excepturi. Culpa eveniet odit vitae sint, minus itaque veritatis, facere aliquid sapiente omnis quasi adipisci! Consequuntur corporis voluptate et hic doloribus temporibus libero assumenda rerum molestiae, magnam reprehenderit. Corrupti excepturi sint eaque consequuntur aspernatur numquam ea id vel dolorem. </p>
 
+        <ol type="A" start="C" style="list-style-type: upper-alpha;">
+            <li>11111111</li>
+            <li>222222222</li>
+            <li>333333</li>
+        </ol>
+        <ol class='c1'>
+            <li>HE</li>
+            <li>HELLOOOO</li>
+            <li>HELLOOOO</li>
+        </ol>
+        <ol class='c2'>
+            <li>H</li>
+            <li>HELLOOOO</li>
+            <li>HELLOOOO</li>
+        </ol>
         </body>
 </html>
